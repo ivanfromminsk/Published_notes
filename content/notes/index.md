@@ -10,5 +10,4 @@ title: Published notes
 - [[archicad-template|ArchiCAD template]]
 - [[masterplan-template|Master plan project template]]
 - [[masterplan-template-pages|Master plan project template pages]]
-- [[publication-test|Publication test]]
 - [[urban-planning-study|Urban planning study]]
