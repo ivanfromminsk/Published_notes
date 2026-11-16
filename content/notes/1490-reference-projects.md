@@ -10,6 +10,7 @@ title: 1490 Анализ аналогичных проектов
 - [cian](https://nn.cian.ru/newobjects/list?deal_type=sale&engine_version=2&offer_type=newobject&region=4885&p=6)
 - [domclick](https://nn.domclick.ru/search/on-map?deal_type=sale&category=living&offer_type=complex&aids=8899&sw=56.148371150414256%2C43.766761923369174&ne=56.337180490935395%2C44.32301160867572&utm_referrer=https%3A%2F%2Fwww.google.com%2F&offset=80) - удобно на карте новостройки, можно посмотреть на тенденции фасадов, благоустройства и тд.
 - [gipernn](https://www.gipernn.ru/kottedzhnye-poselki) - здесь хорошая подборка коттеджных поселков
+---
 ### Коттеджные поселки
 #### Примеры больших с простой структурой без или слаборазвитой коммерцией
 1. [Отрадное 13км от Н, 268 участков](https://www.gipernn.ru/kottedzhnye-poselki/otradnoe)
@@ -23,6 +24,8 @@ title: 1490 Анализ аналогичных проектов
 2. [Микрогород Стрижи](https://www.gipernn.ru/kottedzhnye-poselki/strizhi) [2](https://www.domostroynn.ru/kottedzhnye-poselki/kp-strizhi#location) и [на карте](https://yandex.by/maps/org/strizhi/17344037570/?ll=43.729058%2C56.157222&z=10)- с запада от Ройки ближе к реке, разные типологии. попытка в крт но вышло убого. этапность важна и комплексность
 #### Примеры из более центральной части
 1. [Прага 147 участков](https://www.gipernn.ru/kottedzhnye-poselki/praga) - таунхаусы в цетре города, есть детский сад и спорт
+
+
 ### ЖК
 #### Целевой типологии
 - [ЖК Смородина](https://xn--d1amha.xn--p1ai/project/zhk-smorodina/) [домклик](https://nn.domclick.ru/complexes/smorodina__118334) [циан](https://zhk-smorodina-nn-i.cian.ru/) [на карте](https://yandex.by/maps/org/smorodina/197693032817/?ll=43.820254%2C56.219595&z=15.2)- аналогичная этажность, окружен частной застройкой
@@ -36,7 +39,8 @@ title: 1490 Анализ аналогичных проектов
 - [ЖК Новое Ольгино](https://nn.domclick.ru/complexes/gorodskie-kvartaly-novoe-olgino__124932) - чуть ближе к Козловке
 - [ЖК Анкудиновский парк](https://nn.domclick.ru/complexes/km-ankudinovskii-park__4329) - микрорайон с башнями севернее ройки вокруг пусто те он сам в себе. как пример работы на себя без оглядки на контекст
 
-### Выбранные для анализа
+### Выбранные для cхем
+
 
 
 
