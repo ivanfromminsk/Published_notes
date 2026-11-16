@@ -28,19 +28,18 @@ title: 1490 Анализ аналогичных проектов
 
 ### ЖК
 #### Целевой типологии
-- [ЖК Смородина](https://xn--d1amha.xn--p1ai/project/zhk-smorodina/) [домклик](https://nn.domclick.ru/complexes/smorodina__118334) [циан](https://zhk-smorodina-nn-i.cian.ru/) [на карте](https://yandex.by/maps/org/smorodina/197693032817/?ll=43.820254%2C56.219595&z=15.2)- аналогичная этажность, окружен частной застройкой
-- [ЖК Гармоника](https://xn----8sbaknpkeqkkw.xn--p1ai/) [домклик](https://nn.domclick.ru/complexes/garmonika__126139) - граничит с Новой Ройкой. Аналогичная этажность но проще структура
-- [ЖК Новая Ройка](https://nn-newlife.ru/?utm_campaign=ppl&utm_medium=banner&utm_source=yandex_maps#top) [домострой](https://www.domostroynn.ru/novostroyki/zhk-mikrorayon-novaya-zhizn/dom-7)
-- ЖК Времена Года [на карте](https://yandex.by/maps/47/nizhny-novgorod/?ll=44.020207%2C56.215125&mode=poi&photos%5Bbusiness%5D=196593754185&photos%5Bid%5D=urn%3Ayandex%3Asprav%3Aphoto%3A13594632-2a000001941bb07eea33750501a9e4a7ba6e&poi%5Bpoint%5D=44.019114%2C56.216564&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D196593754185&tab=gallery&z=16.8) - слева от Новой Ройки, аналогично, но депресивнее 
-
+1. [ЖК Смородина](https://xn--d1amha.xn--p1ai/project/zhk-smorodina/) [домклик](https://nn.domclick.ru/complexes/smorodina__118334) [циан](https://zhk-smorodina-nn-i.cian.ru/) [на карте](https://yandex.by/maps/org/smorodina/197693032817/?ll=43.820254%2C56.219595&z=15.2)- аналогичная этажность, окружен частной застройкой
+2. [ЖК Гармоника](https://xn----8sbaknpkeqkkw.xn--p1ai/) [домклик](https://nn.domclick.ru/complexes/garmonika__126139) - граничит с Новой Ройкой. Аналогичная этажность но проще структура
+3. [ЖК Новая Ройка](https://nn-newlife.ru/?utm_campaign=ppl&utm_medium=banner&utm_source=yandex_maps#top) [домострой](https://www.domostroynn.ru/novostroyki/zhk-mikrorayon-novaya-zhizn/dom-7)
+4. ЖК Времена Года [на карте](https://yandex.by/maps/47/nizhny-novgorod/?ll=44.020207%2C56.215125&mode=poi&photos%5Bbusiness%5D=196593754185&photos%5Bid%5D=urn%3Ayandex%3Asprav%3Aphoto%3A13594632-2a000001941bb07eea33750501a9e4a7ba6e&poi%5Bpoint%5D=44.019114%2C56.216564&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D196593754185&tab=gallery&z=16.8) - слева от Новой Ройки, аналогично, но депресивнее 
 #### Большие жк для примера +- той же категории жилья в Нижнем Новгороде
-- [ЖК Новинки](https://nn.domclick.ru/complexes/novinki__122747) - субцентр западнее от Ройки возле реки
-- [ЖК Савин парк](https://nn.domclick.ru/complexes/savin-park__116752) - субцентр западнее от Ройки возле реки
-- [ЖК Новое Ольгино](https://nn.domclick.ru/complexes/gorodskie-kvartaly-novoe-olgino__124932) - чуть ближе к Козловке
-- [ЖК Анкудиновский парк](https://nn.domclick.ru/complexes/km-ankudinovskii-park__4329) - микрорайон с башнями севернее ройки вокруг пусто те он сам в себе. как пример работы на себя без оглядки на контекст
+1. [ЖК Новинки](https://nn.domclick.ru/complexes/novinki__122747) - субцентр западнее от Ройки возле реки
+2. [ЖК Савин парк](https://nn.domclick.ru/complexes/savin-park__116752) - субцентр западнее от Ройки возле реки
+3. [ЖК Новое Ольгино](https://nn.domclick.ru/complexes/gorodskie-kvartaly-novoe-olgino__124932) - чуть ближе к Козловке
+4. [ЖК Анкудиновский парк](https://nn.domclick.ru/complexes/km-ankudinovskii-park__4329) - микрорайон с башнями севернее ройки вокруг пусто те он сам в себе. как пример работы на себя без оглядки на контекст
 
 ### Выбранные для cхем
-
+1. Дерв
 
 
 
