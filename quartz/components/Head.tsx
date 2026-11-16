@@ -43,6 +43,13 @@ export default (() => {
       <head>
         <title>{title}</title>
         <meta charSet="utf-8" />
+        {/* Prefer the owner's dark theme on first visit; retain the visitor's manual choice. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              'try { var theme = localStorage.getItem("theme"); if (theme !== "light" && theme !== "dark") { theme = "dark"; localStorage.setItem("theme", theme); } document.documentElement.setAttribute("saved-theme", theme); } catch (_) { document.documentElement.setAttribute("saved-theme", "dark"); }',
+          }}
+        />
         {coreStylesheet && <link rel="preload" href={coreStylesheet} as="style" />}
         {coreScript && coreScript.contentType === "external" && (
           <link rel="preload" href={coreScript.src} as="script" />

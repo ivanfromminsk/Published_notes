@@ -1,3 +1,115 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+// Minimal-inspired typography and Everforest palette.
+// Palette and heading hierarchy adapted from kepano/obsidian-minimal
+// (Everforest palette by sainnhe, MIT).
+html:root {
+  --minimal-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif;
+  --bodyFont: var(--minimal-font);
+  --headerFont: var(--minimal-font);
+  --titleFont: var(--minimal-font);
+  --codeFont: ui-monospace, "Cascadia Mono", Consolas, "SFMono-Regular", Menlo, monospace;
+  --minimal-sidebar: #efebd4;
+  --minimal-h1: #f85552;
+  --minimal-h2: #f57d26;
+  --minimal-h3: #dfa000;
+  --minimal-h4: #8da101;
+  --minimal-h5: #3795c5;
+  --minimal-h6: #df69ba;
+  color-scheme: light;
+}
+
+html:root[saved-theme="dark"] {
+  --minimal-sidebar: #232a2e;
+  --minimal-h1: #e67e80;
+  --minimal-h2: #e69875;
+  --minimal-h3: #dbbc7f;
+  --minimal-h4: #a7c080;
+  --minimal-h5: #7fbbb3;
+  --minimal-h6: #d699b6;
+  color-scheme: dark;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.page article {
+  line-height: 1.5;
+
+  p, li, tbody {
+    line-height: 1.5;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.35;
+    margin: 1.4em 0 0.5em;
+    letter-spacing: normal;
+
+    > a[role="anchor"] {
+      color: inherit;
+    }
+  }
+
+  h1, > h1 {
+    color: var(--minimal-h1);
+    font-size: 1.125em;
+    font-weight: 600;
+  }
+  h2 {
+    color: var(--minimal-h2);
+    font-size: 1.05em;
+    font-weight: 600;
+  }
+  h3 {
+    color: var(--minimal-h3);
+    font-size: 1em;
+    font-weight: 500;
+  }
+  h4 {
+    color: var(--minimal-h4);
+    font-size: 0.9em;
+    font-weight: 500;
+  }
+  h5 {
+    color: var(--minimal-h5);
+    font-size: 0.85em;
+    font-weight: 500;
+    font-variant: small-caps;
+  }
+  h6 {
+    color: var(--minimal-h6);
+    font-size: 0.85em;
+    font-weight: 400;
+    font-variant: small-caps;
+  }
+
+  a.internal {
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    font-weight: 400;
+    line-height: inherit;
+  }
+
+  a.external {
+    font-weight: 400;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+}
+
+.page .article-title {
+  color: var(--dark);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+// Keep the existing Quartz layout; distinguish the navigation surfaces.
+@media all and ($desktop) {
+  .page > #quartz-body .sidebar {
+    background: var(--minimal-sidebar);
+  }
+}
