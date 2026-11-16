@@ -107,9 +107,189 @@ body {
   line-height: 1.3;
 }
 
-// Keep the existing Quartz layout; distinguish the navigation surfaces.
-@media all and ($desktop) {
-  .page > #quartz-body .sidebar {
-    background: var(--minimal-sidebar);
+// Obsidian-like workspace: navigation on the left, reading column centered
+// within the remaining workspace. The graph, TOC and backlinks follow the note.
+html:root {
+  --minimal-nav: #829181;
+  --minimal-active: #e5e2d2;
+  --minimal-reading-width: 40rem;
+}
+
+html:root[saved-theme="dark"] {
+  --minimal-nav: #9da9a0;
+  --minimal-active: #353e43;
+}
+
+.page .article-title {
+  color: var(--minimal-h1);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.page article {
+  li {
+    line-height: 1.65;
+  }
+  ul, ol {
+    padding-inline-start: 1.4em;
+  }
+  li::marker {
+    color: var(--minimal-nav);
+  }
+  li > ul, li > ol {
+    border-inline-start: 1px solid var(--lightgray);
+    margin-inline-start: -0.55em;
+    padding-inline-start: 1.45em;
   }
 }
+
+// Navigation is muted, not rendered as green links from the article.
+.page > #quartz-body .sidebar.left {
+  color: var(--minimal-nav);
+  font-size: 0.8125rem;
+
+  a, a.internal, .folder-container div > a,
+  .folder-container div > button span, .folder-icon {
+    color: var(--minimal-nav);
+    font-weight: 400;
+    background: transparent;
+  }
+
+  .page-title a {
+    color: var(--darkgray);
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .explorer-content ul li > a,
+  .folder-container div > a,
+  .folder-container div > button span {
+    opacity: 1;
+    font-size: 0.8125rem;
+    line-height: 1.65;
+  }
+
+  .explorer-content ul li > a {
+    display: block;
+    padding: 0.2rem 0.4rem;
+    border-radius: 5px;
+    overflow-wrap: anywhere;
+  }
+
+  .explorer-content ul li > a.active,
+  .explorer-content ul li > a:hover {
+    color: var(--darkgray);
+    background: var(--minimal-active);
+    opacity: 1;
+  }
+
+  .folder-container div > a:hover,
+  .folder-container div > button:hover span {
+    color: var(--darkgray);
+  }
+
+  .explorer button h2 {
+    font-size: 0.8125rem;
+    color: var(--minimal-nav);
+    font-weight: 500;
+  }
+}
+
+.page .breadcrumb-container a,
+.page .breadcrumbs a {
+  color: var(--minimal-nav);
+  font-weight: 400;
+  background: transparent;
+}
+
+.site-about {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.2rem 0.75rem;
+  padding: 0 0 0.75rem;
+  margin: 0 0 1.25rem;
+  border-bottom: 1px solid var(--lightgray);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: var(--minimal-nav);
+
+  a {
+    color: var(--secondary);
+    font-weight: 400;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+}
+
+@media (min-width: 801px) {
+  .page[data-frame="default"] {
+    max-width: none;
+    width: 100%;
+  }
+
+  .page[data-frame="default"] > #quartz-body {
+    grid-template-columns: 16rem minmax(0, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "grid-sidebar-left grid-center"
+      "grid-sidebar-left grid-sidebar-right"
+      "grid-sidebar-left grid-footer";
+    column-gap: 0;
+    row-gap: 0;
+    padding: 0;
+
+    > .sidebar.left {
+      background: var(--minimal-sidebar);
+      border-inline-end: 1px solid var(--lightgray);
+      padding: 2rem 0.9rem 1.5rem;
+      gap: 1rem;
+      min-width: 0;
+      align-self: start;
+    }
+
+    > .center, > .sidebar.right, > footer {
+      box-sizing: border-box;
+      width: 100%;
+      min-width: 0;
+      max-width: calc(var(--minimal-reading-width) + 4rem);
+      margin-inline: auto;
+      padding-inline: 2rem;
+    }
+
+    > .center {
+      grid-area: grid-center;
+      padding-top: 0;
+      .page-header {
+        margin-top: 2rem;
+      }
+    }
+
+    > .sidebar.right {
+      grid-area: grid-sidebar-right;
+      position: static;
+      height: auto;
+      padding-block: 0.75rem 1.5rem;
+      background: transparent;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      overflow: visible;
+      gap: 1.5rem;
+
+      > * {
+        flex: 1 1 15rem;
+        min-width: 0;
+        max-height: 24rem;
+      }
+    }
+
+    > footer {
+      grid-area: grid-footer;
+      margin-inline: auto;
+    }
+  }
+}
+

@@ -31,6 +31,10 @@ export const DefaultFrame: PageFrame = {
         </div>
         <div class="center">
           <div class="page-header">
+            <aside class="site-about" aria-label="О сайте">
+              <span>Мои рабочие заметки по архитектуре и градостроительству.</span>
+              <a href="https://t.me/ivanfromminsk">Telegram: @ivanfromminsk</a>
+            </aside>
             <Header {...componentData}>
               {header.map((HeaderComponent) => (
                 <HeaderComponent {...componentData} />
