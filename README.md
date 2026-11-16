@@ -1,17 +1,9 @@
-# Quartz v5
+# Architecture notes
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+Quartz 5 publication site. Generated notes in `content/notes/` are maintained by the private source's export workflow. Do not manually edit that folder. The source vault remains private.
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
+Site: https://ivanfromminsk.github.io/Published_notes/
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+Pages deployment uses `.github/workflows/publish-pages.yml` on branch `v5`.
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
-
-## Sponsors
-
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+Quartz: https://github.com/jackyzha0/quartz (MIT).
