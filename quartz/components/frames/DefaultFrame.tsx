@@ -4,10 +4,8 @@ import HeaderConstructor from "../Header"
 const Header = HeaderConstructor()
 
 /**
- * The default page frame — three-column layout with left sidebar, center
- * content (header + body + afterBody), and right sidebar, followed by a footer.
- *
- * This is the original Quartz layout, extracted from renderPage.tsx.
+ * Obsidian-inspired workspace: left navigation and site information,
+ * centered note, and a collapsible right-hand reference panel.
  */
 export const DefaultFrame: PageFrame = {
   name: "default",
@@ -22,19 +20,28 @@ export const DefaultFrame: PageFrame = {
     footer,
     sidebars,
   }: PageFrameProps) {
+    const SiteFooter = ({ mobile = false }: { mobile?: boolean }) => (
+      <div class={`site-sidebar-footer${mobile ? " mobile-site-footer" : ""}`}>
+        <aside class="site-about" aria-label="О сайте">
+          <span>Мои рабочие заметки.</span>
+          <a href="https://t.me/ivanfromminsk">Telegram: @ivanfromminsk</a>
+        </aside>
+        {footer.map((FooterComponent) => (
+          <FooterComponent {...componentData} />
+        ))}
+      </div>
+    )
+
     return (
       <>
         <div class="left sidebar" data-sidebar-mode={sidebars?.left ?? "fit"}>
           {left.map((BodyComponent) => (
             <BodyComponent {...componentData} />
           ))}
+          <SiteFooter />
         </div>
         <div class="center">
           <div class="page-header">
-            <aside class="site-about" aria-label="О сайте">
-              <span>Мои рабочие заметки по архитектуре и градостроительству.</span>
-              <a href="https://t.me/ivanfromminsk">Telegram: @ivanfromminsk</a>
-            </aside>
             <Header {...componentData}>
               {header.map((HeaderComponent) => (
                 <HeaderComponent {...componentData} />
@@ -54,14 +61,20 @@ export const DefaultFrame: PageFrame = {
             ))}
           </div>
         </div>
-        <div class="right sidebar" data-sidebar-mode={sidebars?.right ?? "fit"}>
-          {right.map((BodyComponent) => (
-            <BodyComponent {...componentData} />
-          ))}
-        </div>
-        {footer.map((FooterComponent) => (
-          <FooterComponent {...componentData} />
-        ))}
+        <details class="right sidebar" open>
+          <summary title="Toggle right sidebar" aria-label="Toggle right sidebar">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="m9 18 6-6-6-6" />
+            </svg>
+            <span class="right-panel-label">Note navigation</span>
+          </summary>
+          <div class="right-panel-content">
+            {right.map((BodyComponent) => (
+              <BodyComponent {...componentData} />
+            ))}
+          </div>
+        </details>
+        <SiteFooter mobile />
       </>
     )
   },

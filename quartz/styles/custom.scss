@@ -100,15 +100,8 @@ body {
   }
 }
 
-.page .article-title {
-  color: var(--dark);
-  font-size: 1.5rem;
-  font-weight: 600;
-  line-height: 1.3;
-}
-
 // Obsidian-like workspace: navigation on the left, reading column centered
-// within the remaining workspace. The graph, TOC and backlinks follow the note.
+// within the remaining workspace, with a collapsible right sidebar.
 html:root {
   --minimal-nav: #829181;
   --minimal-active: #e5e2d2;
@@ -121,10 +114,10 @@ html:root[saved-theme="dark"] {
 }
 
 .page .article-title {
-  color: var(--minimal-h1);
-  font-size: 1.125rem;
+  color: var(--darkgray);
+  font-size: 1.5rem;
   font-weight: 600;
-  line-height: 1.4;
+  line-height: 1.3;
   margin-bottom: 1rem;
 }
 
@@ -204,23 +197,109 @@ html:root[saved-theme="dark"] {
   background: transparent;
 }
 
-.site-about {
-  display: flex;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: 0.2rem 0.75rem;
-  padding: 0 0 0.75rem;
-  margin: 0 0 1.25rem;
-  border-bottom: 1px solid var(--lightgray);
-  font-size: 0.8125rem;
-  line-height: 1.5;
+// Footer belongs to the left navigation, not the reading column.
+.site-sidebar-footer {
+  box-sizing: border-box;
+  margin-top: auto;
+  flex: 0 0 auto;
+  min-width: 0;
+  width: 100%;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--lightgray);
   color: var(--minimal-nav);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
 
-  a {
-    color: var(--secondary);
-    font-weight: 400;
-    text-decoration: underline;
-    text-underline-offset: 0.15em;
+  .site-about {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    margin: 0 0 0.65rem;
+    color: inherit;
+    a {
+      color: var(--secondary);
+      font-weight: 400;
+      text-decoration: underline;
+      text-underline-offset: 0.15em;
+    }
+  }
+
+  footer {
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    opacity: 1;
+    font-size: inherit;
+    color: inherit;
+
+    p {
+      margin: 0 0 0.3rem;
+      color: inherit;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      flex-wrap: wrap;
+      gap: 0.2rem 0.5rem;
+    }
+
+    a {
+      color: var(--minimal-nav);
+      font-weight: 400;
+    }
+  }
+}
+
+.page > #quartz-body .sidebar.left .site-about a {
+  color: var(--secondary);
+  text-decoration: underline;
+}
+
+.page[data-frame="default"] > #quartz-body {
+  > .mobile-site-footer {
+    display: none;
+  }
+
+  > .right.sidebar {
+    box-sizing: border-box;
+    min-width: 0;
+    display: block;
+    color: var(--minimal-nav);
+
+    > summary {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 0.5rem;
+      cursor: pointer;
+      list-style: none;
+      width: fit-content;
+      max-width: 100%;
+      padding: 0.35rem;
+      border-radius: 4px;
+      font-size: 0.8125rem;
+      color: var(--minimal-nav);
+
+      &::-webkit-details-marker { display: none; }
+      &:hover { background: var(--minimal-active); }
+      &:focus-visible { outline: 2px solid var(--secondary); outline-offset: 2px; }
+      svg { flex-shrink: 0; }
+    }
+
+    &[open] > summary svg { transform: rotate(180deg); }
+
+    .right-panel-content {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      min-width: 0;
+      padding-top: 0.8rem;
+
+      > * { min-width: 0; }
+    }
   }
 }
 
@@ -231,12 +310,12 @@ html:root[saved-theme="dark"] {
   }
 
   .page[data-frame="default"] > #quartz-body {
+    --right-width: 16rem;
     grid-template-columns: 16rem minmax(0, 1fr);
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto;
     grid-template-areas:
       "grid-sidebar-left grid-center"
-      "grid-sidebar-left grid-sidebar-right"
-      "grid-sidebar-left grid-footer";
+      "grid-sidebar-left grid-sidebar-right";
     column-gap: 0;
     row-gap: 0;
     padding: 0;
@@ -248,48 +327,109 @@ html:root[saved-theme="dark"] {
       gap: 1rem;
       min-width: 0;
       align-self: start;
+      height: 100dvh;
+
+      > .explorer {
+        min-height: 0;
+        flex: 1 1 auto;
+      }
     }
 
-    > .center, > .sidebar.right, > footer {
+    > .center {
       box-sizing: border-box;
       width: 100%;
       min-width: 0;
       max-width: calc(var(--minimal-reading-width) + 4rem);
       margin-inline: auto;
-      padding-inline: 2rem;
-    }
-
-    > .center {
+      padding: 0 2rem;
       grid-area: grid-center;
-      padding-top: 0;
-      .page-header {
-        margin-top: 2rem;
-      }
+
+      .page-header { margin-top: 2rem; }
     }
 
-    > .sidebar.right {
+    > .right.sidebar {
       grid-area: grid-sidebar-right;
+      box-sizing: border-box;
+      width: 100%;
+      max-width: calc(var(--minimal-reading-width) + 4rem);
+      margin-inline: auto;
+      padding: 0.75rem 2rem 1.5rem;
       position: static;
       height: auto;
-      padding-block: 0.75rem 1.5rem;
-      background: transparent;
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-items: flex-start;
-      overflow: visible;
-      gap: 1.5rem;
-
-      > * {
-        flex: 1 1 15rem;
-        min-width: 0;
-        max-height: 24rem;
-      }
-    }
-
-    > footer {
-      grid-area: grid-footer;
-      margin-inline: auto;
     }
   }
 }
 
+// Three-column workspace on wide screens. A closed right panel occupies
+// only a narrow toggle rail, giving the reading column its space back.
+@media (min-width: 1100px) {
+  .page[data-frame="default"] > #quartz-body {
+    grid-template-columns: 16rem minmax(0, 1fr) var(--right-width);
+    grid-template-rows: auto;
+    grid-template-areas: "grid-sidebar-left grid-center grid-sidebar-right";
+
+    &:has(> .right.sidebar:not([open])) { --right-width: 2.75rem; }
+
+    > .right.sidebar {
+      position: sticky;
+      top: 0;
+      align-self: start;
+      height: 100dvh;
+      margin: 0;
+      padding: 2rem 0.9rem 1.5rem;
+      border-inline-start: 1px solid var(--lightgray);
+      background: var(--minimal-sidebar);
+      overflow-y: auto;
+      overscroll-behavior: contain;
+
+      .right-panel-content {
+        width: 100%;
+      }
+
+      &:not([open]) {
+        padding-inline: 0.35rem;
+        overflow: hidden;
+
+        > summary .right-panel-label {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          overflow: hidden;
+          clip-path: inset(50%);
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
+
+@media all and ($mobile) {
+  .page[data-frame="default"] > #quartz-body {
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "grid-sidebar-left"
+      "grid-center"
+      "grid-sidebar-right"
+      "grid-footer";
+
+    > .sidebar.left > .site-sidebar-footer { display: none; }
+
+    > .mobile-site-footer {
+      display: block;
+      grid-area: grid-footer;
+      padding-bottom: 1.5rem;
+    }
+
+    > .center {
+      grid-area: grid-center;
+      min-width: 0;
+    }
+
+    > .right.sidebar {
+      grid-area: grid-sidebar-right;
+      padding-block: 0.75rem;
+      width: 100%;
+    }
+  }
+}
