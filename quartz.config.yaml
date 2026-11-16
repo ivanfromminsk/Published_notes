@@ -2,7 +2,8 @@
 configuration:
   pageTitle: Architecture notes
   pageTitleSuffix: ""
-  enableSPA: true
+  # Use full page navigation to avoid stale sidebar/graph layout after DOM morphing.
+  enableSPA: false
   enablePopovers: true
   prefetch: viewport
   locale: en-US
