@@ -2,4 +2,6 @@
 title: Published notes
 ---
 
-No notes have been published yet.
+# Published notes
+
+- [[publication-test|Publication test]]
