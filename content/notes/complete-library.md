@@ -44,18 +44,22 @@ unlisted: true
 
 ## Work/302 Positioning
 
+- [[portfolio-check|Portfolio check & notes]]
 - [[portfolio-concept-2026|Portfolio concept 2026]]
 - [[portfolio-key-points|Portfolio concept by key points]]
 - [[portfolio-materials|Portfolio необходимые материалы]]
 - [[portfolio-components|Portfolio сomponents list]]
+- [[architecture-job-notes|Some notes about architecture job]]
 
 ## Work/Zrobim
 
 - [[1490-kozlovka-masterplan|1490 Kozlovka - Masterplan Nizhny Novgorod]]
 - [[1490-reference-projects|1490 Анализ аналогичных проектов]]
 - [[1490-brief|1490 из ТЗ]]
+- [[markdown-indesign-specification|Markdown_InDesign Technical Specification]]
 - [[masterplan-template-pages|Master plan project template pages]]
 - [[masterplan-template|Master plan project template]]
+- [[indesign-script-documentation|Script documentation]]
 - [[script-syntax-template|Script possible sintaxis template]]
 - [[script-test|Script test]]
 - [[urban-planning-study|Urban planning study]]
