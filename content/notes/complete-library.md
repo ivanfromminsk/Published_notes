@@ -6,10 +6,15 @@ unlisted: true
 # Complete library
 
 
+## Personal/01 Index
+
+- [[personal-moc|Personal MOC]]
+
 ## Personal/02 Areas/Collections
 
 - [[file-system-rules|File System Rules]]
 - [[youtube-playlists|Youtube playlists]]
+- [[saved-references|Сохранненое]]
 - [[reading-list|Список книг]]
 - [[film-list|Список фильмов]]
 
@@ -18,6 +23,11 @@ unlisted: true
 - [[english-tongue-twisters|Английские скороговорки]]
 - [[english-old-plan|Английский OLD]]
 - [[german-study-plan|Немецкий примерный план]]
+
+## Work/01 Index
+
+- [[arch-moc|Arch MOC]]
+- [[zrobim-moc|Zrobim MOC]]
 
 ## Work/301 Arch/Pipeline
 
@@ -28,8 +38,15 @@ unlisted: true
 - [[project-file-structure|Project file structure]]
 - [[physical-models|Макеты]]
 
+## Work/302 Positioning/302 archive
+
+- [[portfolio-concept-2025|Portfolio Concept 2025]]
+
 ## Work/302 Positioning
 
+- [[portfolio-concept-2026|Portfolio concept 2026]]
+- [[portfolio-key-points|Portfolio concept by key points]]
+- [[portfolio-materials|Portfolio необходимые материалы]]
 - [[portfolio-components|Portfolio сomponents list]]
 
 ## Work/Zrobim
@@ -40,4 +57,5 @@ unlisted: true
 - [[masterplan-template-pages|Master plan project template pages]]
 - [[masterplan-template|Master plan project template]]
 - [[script-syntax-template|Script possible sintaxis template]]
+- [[script-test|Script test]]
 - [[urban-planning-study|Urban planning study]]
