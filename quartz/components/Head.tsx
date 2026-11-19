@@ -43,6 +43,7 @@ export default (() => {
       <head>
         <title>{title}</title>
         <meta charSet="utf-8" />
+        {fileData.unlisted === true && <meta name="robots" content="noindex, nofollow" />}
         {/* Prefer the owner's dark theme on first visit; retain the visitor's manual choice. */}
         <script
           dangerouslySetInnerHTML={{

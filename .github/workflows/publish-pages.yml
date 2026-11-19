@@ -25,6 +25,8 @@ jobs:
       - run: npm ci
       - run: npx quartz plugin install --from-config
       - run: npx quartz build
+      - name: Verify selective publication and hidden navigation
+        run: python3 .github/scripts/check-publication.py content public
       - uses: actions/upload-pages-artifact@v4
         with:
           path: public
