@@ -8,20 +8,29 @@ unlisted: true
 
 ## Personal/02 Areas/Collections
 
+- [[file-system-rules|File System Rules]]
+- [[youtube-playlists|Youtube playlists]]
 - [[reading-list|Список книг]]
 - [[film-list|Список фильмов]]
 
 ## Personal/02 Areas/English + DE
 
 - [[english-tongue-twisters|Английские скороговорки]]
+- [[english-old-plan|Английский OLD]]
 - [[german-study-plan|Немецкий примерный план]]
 
 ## Work/301 Arch/Pipeline
 
+- [[architecture-study|01 Architecture study]]
 - [[3dsmax-exterior-scenes|3DsMax Экстерьерные сцены]]
 - [[archicad-template|ArchiCAD template]]
+- [[concept-stage|OLD NOTE о концептуальной стадии проектов]]
 - [[project-file-structure|Project file structure]]
 - [[physical-models|Макеты]]
+
+## Work/302 Positioning
+
+- [[portfolio-components|Portfolio сomponents list]]
 
 ## Work/Zrobim
 
@@ -30,4 +39,5 @@ unlisted: true
 - [[1490-brief|1490 из ТЗ]]
 - [[masterplan-template-pages|Master plan project template pages]]
 - [[masterplan-template|Master plan project template]]
+- [[script-syntax-template|Script possible sintaxis template]]
 - [[urban-planning-study|Urban planning study]]
