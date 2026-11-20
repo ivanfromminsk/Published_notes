@@ -20,6 +20,5 @@ unlisted: true
 
 # Projects
 - [[masterplan-template|Master plan project template]]
-- [неопубликованная заметка]
 - [[1490-kozlovka-masterplan|1490 Kozlovka - Masterplan Nizhny Novgorod]]
 
