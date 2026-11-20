@@ -2,7 +2,10 @@
 title: 1490 Kozlovka - Masterplan Nizhny Novgorod
 ---
 
-## Анализ
+[неопубликованная заметка]
+
+
+
 [[1490-brief|1490 из ТЗ]]
 
 [чат про анализ](https://chatgpt.com/s/t_6ada10e387608191ba2f39eec1d02c53), много и несколько непоследовательно
@@ -10,6 +13,10 @@ title: 1490 Kozlovka - Masterplan Nizhny Novgorod
 
 
 [[1490-reference-projects|1490 Анализ аналогичных проектов]] - проекты
+[неопубликованная заметка]
+
+
+[неопубликованная заметка]
 
 
 
