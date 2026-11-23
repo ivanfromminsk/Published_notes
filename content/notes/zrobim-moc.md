@@ -17,7 +17,7 @@ unlisted: true
 - [неопубликованная заметка]
 - [[new-company-working-principles|Как себя вести в новой компании (тезисы после чата) 2026 09 14]]
 - [[urban-planning-study|Urban planning study]]
-- [неопубликованная заметка]
+- [[obsidian-teamwork-tool|Obsidian as teamwork tool]]
 
 # Projects
 - [[masterplan-template|Master plan project template]]

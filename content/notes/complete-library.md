@@ -61,6 +61,7 @@ unlisted: true
 - [[markdown-indesign-specification|Markdown_InDesign Technical Specification]]
 - [[masterplan-template-pages|Master plan project template pages]]
 - [[masterplan-template|Master plan project template]]
+- [[obsidian-teamwork-tool|Obsidian as teamwork tool]]
 - [[indesign-script-documentation|Script documentation]]
 - [[script-syntax-template|Script possible sintaxis template]]
 - [[script-test|Script test]]

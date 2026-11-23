@@ -11,4 +11,5 @@ title: Published notes
 - [[archicad-template|ArchiCAD template]]
 - [[masterplan-template|Master plan project template]]
 - [[masterplan-template-pages|Master plan project template pages]]
+- [[obsidian-teamwork-tool|Obsidian as teamwork tool]]
 - [[urban-planning-study|Urban planning study]]
