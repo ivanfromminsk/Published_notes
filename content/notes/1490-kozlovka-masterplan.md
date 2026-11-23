@@ -2,7 +2,7 @@
 title: 1490 Kozlovka - Masterplan Nizhny Novgorod
 ---
 
-[неопубликованная заметка]
+[[1490-project-retrospective-first-presentation|1490 тезисы по течению проекта после подготовки первой презентации]]
 
 
 

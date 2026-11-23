@@ -57,6 +57,7 @@ unlisted: true
 - [[1490-kozlovka-masterplan|1490 Kozlovka - Masterplan Nizhny Novgorod]]
 - [[1490-reference-projects|1490 Анализ аналогичных проектов]]
 - [[1490-brief|1490 из ТЗ]]
+- [[1490-project-retrospective-first-presentation|1490 тезисы по течению проекта после подготовки первой презентации]]
 - [[markdown-indesign-specification|Markdown_InDesign Technical Specification]]
 - [[masterplan-template-pages|Master plan project template pages]]
 - [[masterplan-template|Master plan project template]]
