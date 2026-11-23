@@ -2,12 +2,13 @@
 title: urban broshure template manual
 ---
 
-template created by ivanfromminsk
+template created by @ivanfromminsk (telegram)
 some info about the project: https://ivanfromminsk.github.io/Published_notes/notes/masterplan-template
 
 #### актуальная версия брошюры для презентации
 `Urban broshure template_2026 11 23`
 `InDesign version 21.2`
+D:\Зробим Dropbox\Архитекторы\Иван Ковальчук\Master plan project template\Urban broshure template_2026 11 23
 
 Позднее будет дополнена и уточнена, будут расписаны правила верстки
 
