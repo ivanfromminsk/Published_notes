@@ -12,4 +12,6 @@ title: Published notes
 - [[masterplan-template|Master plan project template]]
 - [[masterplan-template-pages|Master plan project template pages]]
 - [[obsidian-teamwork-tool|Obsidian as teamwork tool]]
+- [[urban-brochure-template-manual|urban broshure template manual]]
 - [[urban-planning-study|Urban planning study]]
+- [[urban-analysis-methodology|Про состав и порядок анализа]]

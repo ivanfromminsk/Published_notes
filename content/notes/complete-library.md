@@ -65,5 +65,7 @@ unlisted: true
 - [[indesign-script-documentation|Script documentation]]
 - [[script-syntax-template|Script possible sintaxis template]]
 - [[script-test|Script test]]
+- [[urban-brochure-template-manual|urban broshure template manual]]
 - [[urban-planning-study|Urban planning study]]
 - [[new-company-working-principles|Как себя вести в новой компании (тезисы после чата) 2026 09 14]]
+- [[urban-analysis-methodology|Про состав и порядок анализа]]
