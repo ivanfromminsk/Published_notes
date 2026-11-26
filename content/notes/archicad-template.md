@@ -9,7 +9,8 @@ title: ArchiCAD template
 - Teamwork изучить и настроить нормально, протестировать как работает ([F1](https://help.graphisoft.com/AC/18/RUS/AC18Help/05_Collaboration/05_Collaboration-3.htm), )
 
 
-techniqs 
+techniques
+- Terrain by servey'`
 
 
 ---
