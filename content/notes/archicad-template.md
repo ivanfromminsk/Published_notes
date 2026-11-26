@@ -6,11 +6,11 @@ title: ArchiCAD template
 Получил пример проекта от Дмитрия и попросил у Виктора
 - [ ] напомнить еще раз Виктору про файл с рабочкой в архикаде
 
-- Teamwork изучить и настроить нормально, протестировать как работает ([F1](https://help.graphisoft.com/AC/18/RUS/AC18Help/05_Collaboration/05_Collaboration-3.htm), )
+- Teamwork изучить и настроить нормально, протестировать как работает ([F1](https://help.graphisoft.com/AC/18/RUS/AC18Help/05_Collaboration/05_Collaboration-3.htm), [tutorial by graphisoft](https://www.youtube.com/playlist?list=PLnXY6vLUwlWXCCr9EWFA3TG2IHZWCLaV0))
 
 
-techniques
-- Terrain by servey'`
+### techniques
+- Terrain by servey's data [tuturial](https://www.youtube.com/watch?v=YbGwulsYO7M)
 
 
 ---
