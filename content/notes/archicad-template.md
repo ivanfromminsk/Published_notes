@@ -13,7 +13,9 @@ title: ArchiCAD template
 ### techniques
 - Terrain by servey's data [tuturial](https://www.youtube.com/watch?v=YbGwulsYO7M)
 
-
+### quick notes
+- archicad layer should be empty
+- path should be relative
 
 ---
 Based on the Archicad 27 default template and Shoegnome Open Template
