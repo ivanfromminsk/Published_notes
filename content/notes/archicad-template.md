@@ -2,6 +2,13 @@
 title: ArchiCAD template
 ---
 
+## Some new ideas for work in ArchiCAD from 2026 12 +
+Получил пример проекта от Дмитрия и попросил у Виктора
+- [ ] напомнить еще раз Виктору про файл с рабочкой в архикаде
+
+
+
+---
 Based on the Archicad 27 default template and Shoegnome Open Template
 
 Consists from
