@@ -13,6 +13,13 @@ title: ArchiCAD template
 ### techniques
 - Terrain by servey's data [tuturial](https://www.youtube.com/watch?v=YbGwulsYO7M)
 
+### custom hotkeys
+
+| external drawing | ctrl + shift + / |
+| ---------------- | ---------------- |
+|                  |                  |
+
+
 ### quick notes
 - archicad layer should be empty
 - path should be relative
