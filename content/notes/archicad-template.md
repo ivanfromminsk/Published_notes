@@ -15,9 +15,10 @@ title: ArchiCAD template
 
 ### custom hotkeys
 
-| external drawing | ctrl + shift + / |
-| ---------------- | ---------------- |
-|                  |                  |
+| place external drawing | ctrl + shift + /       |
+| ---------------------- | ---------------------- |
+| focus on               | F                      |
+| multiple copy          | ctrl + shift + alt + D |
 
 
 ### quick notes
